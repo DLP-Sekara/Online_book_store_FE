@@ -21,7 +21,8 @@ const Routerset = () => {
       </Route>
 
       {/* -----------------------------private & public routes----------------------------- */}
-      {token !== null && token !== "" ? (
+      {/* token !== null && token !== "" */}
+      {true ? (
         <Route path="/" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           {/* <Route

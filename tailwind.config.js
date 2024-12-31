@@ -15,6 +15,7 @@ export const theme = {
     colors: {
       primary: "var(--primary)",
       secondary: "var(--secondary)",
+      cardGray: "var(--card-gray)",
     },
     screens: {
       xxsm: "320px",
