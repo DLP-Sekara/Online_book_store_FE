@@ -4,6 +4,8 @@ import { AuthContext } from "../context/AuthContext";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import SignInView from "../pages/OnBoarding/Sign in/SignInView";
 import DashboardLayout from "../pages/Layout/DashboardLayout";
+import SignUpView from "../pages/OnBoarding/Sign up/SignUpView";
+import OnBoardingProcess from "../pages/OnBoarding/OnBoardingProcess";
 
 const Routerset = () => {
   const { token } = useContext(AuthContext);
@@ -11,12 +13,12 @@ const Routerset = () => {
   return (
     <Routes>
       {/* -----------------------------basic routes----------------------------- */}
-      {/* <Route path="/login" element={<LoginEmail />} />
-      <Route path="signup/*" element={<SignUp />}>
-        <Route path="" element={<SignUpEmail />} />
-        <Route path="sign-up-email" element={<SignUpEmail />} />
-        <Route path="email-verification" element={<EmailVerification />} />
-      </Route> */}
+      {/* <Route path="/login" element={<LoginEmail />} /> */}
+      <Route path="onboarding/*" element={<OnBoardingProcess />}>
+        <Route path="" element={<SignInView />} />
+        <Route path="sign-in" element={<SignInView />} />
+        <Route path="sign-up" element={<SignUpView />} />
+      </Route>
 
       {/* -----------------------------private & public routes----------------------------- */}
       {token !== null && token !== "" ? (
