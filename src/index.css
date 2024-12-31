@@ -14,8 +14,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+  --primary: #0d7cff;
+  --primary-hover: #00499e;
+  --secondary: #005ece;
+  --card-gray: #0000009c;
+}
 
 @font-face {
   font-family: "Inter-Regular";
